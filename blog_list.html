@@ -3,7 +3,7 @@
     <head>
     <title>Blog : sunny</title>
      <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    
+    <script src="https://kit.fontawesome.com/9c0a94a110.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
@@ -38,11 +38,40 @@
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Log In</a> 
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log In</a> 
             </li>
         </div>
     </div>
     </nav>
+
+    <!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel"><i class="fas fa-sign-in-alt"></i>Log In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+             <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fab fa-google"></i>Log in with Google</button>
+              <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="far fa-user"></i>Log in with Username</button>
+        </div>
+        <div class="col-md-6 col-sm-12">
+           <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="far fa-envelope"></i>Sign up with Email</button>
+        </div>
+         </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             </div>
+    </div>
+  </div>
+</div>
 
     <div class="container">
         <div class="row my-3">
@@ -86,13 +115,7 @@
         </div>
 
                
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
+ 
 
         <!-- Categories Widget -->
         <div class="card my-4">
@@ -139,7 +162,7 @@
             <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
             </div>
-            <!-- /.container -->
+         
 
 
     
